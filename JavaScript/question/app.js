@@ -1,14 +1,20 @@
 
 /* Q1  */
-let nickname ='ごっしー';
-let age=28;
+let nickname = 'ごっしー';
+let age = 28;
 
 console.log('私のニックネームは' + nickname + 'です。' + '年齢は' + age + '歳です。' );
 
 /* Q2 */
-let languages = ['JavaScript' ,'PHP' ,'Ruby' ,'Python' , 'GO'];
+let languages = ['JavaScript',
+                 'PHP',
+                 'Ruby',
+                 'Python',
+                 'GO'
+                ];
 
-console.log('私の好きな言語は' + languages[0] + '次は' + languages[3] +'を勉強してみたいです。');
+console.log(`私の好きな言語は${languages[0]}です。
+次は${languages[3]}を勉強してみたいです。`);
 
 /* Q3 */
 let user = {
@@ -23,19 +29,19 @@ console.log(user.age);
 /* Q4 */
 let playList = [
   {
-    name:'John',
-    age:26,
-    favorites:['Card Game', 'Basket Ball', 'Programming'],
+    name: 'John',
+    age: 26,
+    favorites: ['Card Game', 'Basket Ball', 'Programming'],
   },
   {
-    name:'Bob',
-    age:33,
-    favorites:['Tinder', 'The Legend of Zelda'],
+    name: 'Bob',
+    age: 33,
+    favorites: ['Tinder', 'The Legend of Zelda'],
   },
   {
-    name:'Michael',
-    age:22,
-    favorites:['Football','Smash Bros.'],
+    name: 'Michael',
+    age: 22,
+    favorites: ['Football','Smash Bros.'],
   },
 ];
 
@@ -44,7 +50,7 @@ console.log(playList[1].favorites[1]);
 /* Q5 */
 function avgAge() {
  let totalage = (playList[0].age + playList[1].age + playList[2].age);
- console.log(totalage / 3);
+ console.log(totalage / playList.length);
 }
 
 avgAge();
@@ -64,7 +70,7 @@ sayWorld();
 
 /* Q7 */
 
-user.birthday ='2000-09-27';
+user.birthday = '2000-09-27';
 user.sayHello = function() {
   console.log('Hello!');
 }
@@ -75,32 +81,31 @@ console.log(user.birthday);
 /* Q8 */
 let calc = {};
 
-calc.add = function(X,Y) {
-  console.log(X + Y);
+calc.add = function(x, y) {
+  console.log(x + y);
 }
-calc.add(2,5);
+calc.add(2, 5);
 
-calc.subtract = function(X,Y){
-  console.log(X - Y);
+calc.subtract = function(x, y){
+  console.log(x - y);
 }
-calc.subtract(11,1);
+calc.subtract(11, 1);
 
-calc.multiply = function(X,Y){
-  console.log(X * Y);
+calc.multiply = function(x, y){
+  console.log(x * y);
 }
-calc.multiply(7,7);
+calc.multiply(7, 7);
 
-calc.devide = function(X,Y){
-  console.log(X / Y);
+calc.devide = function(x, y){
+  console.log(x / y);
 }
-calc.devide(25,5);
+calc.devide(25, 5);
 
 /* Q9 */
-function reminder(X,Y){
-  let unko = X % Y;
-  return unko;
+function reminder(x, y){
+  return x % y;
 }
-console.log('5を3で割った余りは'+ reminder(5,3) + 'です。');
+console.log('5を3で割った余りは'+ reminder(5, 3) + 'です。');
 
 /* Q10 */
 /*
